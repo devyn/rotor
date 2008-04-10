@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Rotor syntax (hworld.rs)</title>
+<style>
+			
+			.rotor .commands { color: green; font-weight: bold; }
+			.rotor .comments { color: grey; font-style: italic; }
+			.rotor .integers { color: blue; font-weight: bold;  }
+			.rotor .pointers { color: red;                      }
+			.rotor .strings  { color: brown;                    }
+			.rotor .chars    { color: cyan;                     }
+			.rotor .symbols  { color: darkyellow;               }
+			
+		</style>
+</head>
+<body>
+<pre class='rotor'><span class="comments">comment &quot;Hello World in Rotor.&quot;</span><span class="other">
+</span><span class="comments">comment &quot;Of course, boring, so it's juiced up a little...&quot;</span><span class="other">
+
+</span><span class="commands">import</span><span class="other"> </span><span class="pointers">gems.colored</span><span class="other">
+
+</span><span class="comments">comment &quot;See that? A python/java style 'import' has just taken place!&quot;</span><span class="other">
+</span><span class="comments">comment &quot;by the way, you need the Colored ruby gem to run this...&quot;</span><span class="other">
+</span><span class="comments">comment &quot;maybe even Win32.Console.ANSI...&quot;</span><span class="other">
+
+</span><span class="commands">set</span><span class="other"> msg, </span><span class="strings">&quot;Hello World!&quot;</span><span class="other">
+
+</span><span class="comments">comment &quot;Boooring...&quot;</span><span class="other">
+
+</span><span class="commands">set</span><span class="other"> msg, [</span><span class="commands">callvar</span><span class="other"> msg, red]
+</span><span class="commands">set</span><span class="other"> msg, [</span><span class="commands">callvar</span><span class="other"> msg, bold]
+
+</span><span class="comments">comment &quot;Now we're talkin'...&quot;</span><span class="other">
+
+</span><span class="commands">out</span><span class="other"> [</span><span class="commands">get</span><span class="other"> msg]
+
+</span><span class="comments">comment &quot;You should have gotten 'Hello World!' in red bold.&quot;</span><span class="other">
+</span><span class="comments">comment &quot;If not, something's messed with your system.&quot;</span><span class="other">
+</span><span class="comments">comment &quot;Try switchin' to Linux...&quot;</span><span class="other">
+</span></pre>
+</body>
+</html>
